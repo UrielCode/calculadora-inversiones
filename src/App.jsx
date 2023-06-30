@@ -46,6 +46,7 @@ function App() {
 
       {/* Todo: Show below table conditionally (only once result data is available) */}
       {/* Show fallback text if no data is available */}
+      
       {!userInput && <p className="textDefault">Aún no se ha calculado ninguna inversión.</p> }
       {userInput &&  <Table data={yearlyData} initialInvestment = {userInput['current-savings']} />}
 
